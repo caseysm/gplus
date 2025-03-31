@@ -1,0 +1,16 @@
+# VSCode
+.vscode/
+
+# Binary files
+bin/
+
+# Claude
+CLAUDE.md
+
+# Build files
+build/
+
+# Proteins
+*.pdb
+*.cif
+*.pml

@@ -5,8 +5,15 @@
 
 https://en.wikipedia.org/wiki/MIT_License
 
-### 1. Build executable
-`make`
+## Building GANGSTA+
 
-### 2. Run example
-`./gplus d2uaga1.pdb d1gkub1.pdb`
+```bash
+# Configure and build
+cmake -B build && cmake --build build
+
+# Run example
+./build/gplus d2uaga1.pdb d1gkub1.pdb
+
+# Clean build
+rm -rf build/
+```
