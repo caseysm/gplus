@@ -14,3 +14,14 @@ build/
 *.pdb
 *.cif
 *.pml
+
+# Text
+*.txt
+*.log
+
+# CSV
+*.csv
+
+# JSON
+*.json
+

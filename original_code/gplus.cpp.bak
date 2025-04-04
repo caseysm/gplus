@@ -1,3 +1,5 @@
+#define DEBUG_MODE
+
 /* Copyright (C) 2010 Aysam Guerler and Ernst-Walter Knapp 
 
 This program is free software: you can redistribute it and/or modify 
@@ -88,6 +90,13 @@ char strbuf[2048];
 
 // std includes 
 using namespace std; 
+
+// Debug output function
+void debug_log(const string& message) {
+    static ofstream debug_file("debug_original.txt", ios::out | ios::app);
+    debug_file << "[DEBUG] " << message << endl;
+    debug_file.flush();
+}
 #include <assert.h> 
 #include <unistd.h> 
 #include <sys/types.h> 
